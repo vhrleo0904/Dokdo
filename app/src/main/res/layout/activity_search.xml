@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorWhite"
+	tools:context=".SearchActivity"
+	android:id="@+id/constraintLayout">
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageButton
+			android:id="@+id/imageButtonSearch"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:onClick="onImageButton"
+			app:srcCompat="@drawable/ic_musica_searcher"/>
+
+		<EditText
+			android:id="@+id/editTextResearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="검색"
+			android:ems="10"
+			android:fontFamily="@font/basic_font"
+			android:textColor="@color/colorBlack"
+			android:theme="@style/EditTextTheme"/>
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/tabList"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:textColor="@color/colorWhite"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+		app:layout_constraintBottom_toBottomOf="parent"/>
+
+	<TextView
+		android:id="@+id/textViewNews"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="검색한 결과가 없습니다."
+		android:textSize="25sp"
+		android:fontFamily="@font/basic_font"
+		android:visibility="invisible"/>
+
+</android.support.constraint.ConstraintLayout>

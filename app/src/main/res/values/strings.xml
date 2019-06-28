@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">Dokdo</string>
+	<string name="Intro">독도에\n대한 소개</string>
+	<string name="WayToDokdo">독도로\n가는 방법</string>
+	<string name="Nature">독도의\n자연경관</string>
+	<string name="History">독도의\n역사</string>
+</resources>
